@@ -1,0 +1,76 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#commentsContainer {
+    width: 50%;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(4, 100, 95)
+}
+
+.data-div {
+    border: 2px solid black;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+    width: 400px;
+    /* margin: auto; */
+    margin: 20px auto;
+}
+
+.btn {
+    display: flex;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 55px 25px;
+    border-radius: 5px;
+}
+
+.modal-content label {
+    margin-bottom: 18px;
+}
+
+.modal-content input {
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    margin: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
