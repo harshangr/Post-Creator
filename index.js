@@ -94,8 +94,15 @@ function updateComment(commentId) {
 }
 
 function deleteComment(commentId) {
-    // Filter out the comment with the specified ID (replace with actual logic)
-    commentsData = commentsData.filter(comment => comment.id !== commentId);
+    // Assuming you want to confirm before deleting
+    const confirmDelete = confirm("Are you sure you want to delete this post?");
 
-    renderComments(); // Render the updated comments
+    if (confirmDelete) {
+        // Filter out the comment with the specified ID (replace with actual logic)
+        commentsData = commentsData.filter(comment => comment.id !== commentId);
+
+        renderComments(); // Render the updated comments
+
+        // Show an alert after deleting the post
+    }
 }
